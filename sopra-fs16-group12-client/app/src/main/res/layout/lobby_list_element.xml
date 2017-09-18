@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/lobby_list_element"
+    android:clickable="false">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lobby_list_element_name"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textSize="20dp"
+            android:textColor="#000000" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/dialog_join_lobby_element_character_container"></FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lobby_list_elements_n_players"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_margin="5dp"
+            android:textColor="#000000" />
+    </FrameLayout>
+
+</LinearLayout>

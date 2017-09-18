@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_lobby_user_list_element_owner"
+        android:src="@drawable/crown"
+        android:visibility="invisible"
+        android:padding="10dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment_lobby_user_list_element_image"
+        android:padding="10dp"
+        android:layout_gravity="center_vertical|right"
+        android:visibility="invisible"
+        android:src="@drawable/circle_django" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/fragment_lobby_user_list_element_name"
+            android:layout_gravity="center_vertical"
+            android:text="SwagLord95"
+            android:gravity="left|center_vertical"
+            android:textSize="25sp"
+            android:textColor="#000000" />
+    </FrameLayout>
+
+</LinearLayout>

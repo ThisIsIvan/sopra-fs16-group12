@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/FrameLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    android:orientation="vertical"
+    tools:context=".activities.GameActivity"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop"
+        android:cropToPadding="false"
+        android:longClickable="false"
+        android:src="@drawable/default_background" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:alpha="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.2"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="$ 0"
+                            android:id="@+id/fragment_game_networth"
+                            android:gravity="center"
+                            android:typeface="serif"
+                            android:textColor="#000000" />
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:padding="10dp">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:measureAllChildren="false">
+
+                            <ImageView
+                                android:layout_width="48dp"
+                                android:layout_height="48dp"
+                                android:id="@+id/imageView2"
+                                android:src="@drawable/item_bag"
+                                android:adjustViewBounds="true"
+                                android:layout_gravity="center" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="0"
+                                android:id="@+id/fragment_game_n_bags"
+                                android:typeface="serif"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:textSize="15sp"
+                                android:textColor="#000000" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginLeft="5dp">
+
+                            <ImageView
+                                android:layout_width="48dp"
+                                android:layout_height="48dp"
+                                android:id="@+id/imageView4"
+                                android:src="@drawable/item_case"
+                                android:adjustViewBounds="true"
+                                android:layout_gravity="center" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="0"
+                                android:id="@+id/fragment_game_n_cases"
+                                android:typeface="serif"
+                                android:gravity="center"
+                                android:textSize="15sp"
+                                android:textColor="#000000"
+                                android:layout_gravity="center" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="48dp"
+                                android:layout_height="48dp"
+                                android:id="@+id/imageView"
+                                android:src="@drawable/item_gem"
+                                android:adjustViewBounds="true"
+                                android:layout_gravity="top|center" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="0"
+                                android:id="@+id/fragment_game_n_gems"
+                                android:typeface="serif"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:textSize="15sp"
+                                android:textColor="#000000" />
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/fragment_game_current_player"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|right"
+                            android:textSize="30sp"
+                            android:textColor="#000000"
+                            android:singleLine="true" />
+
+                        <FrameLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/fragment_game_player_queue_container"
+                            android:layout_weight="1">
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/fragment_game_game_deck_container"></FrameLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.2"
+                    android:orientation="vertical"
+                    android:gravity="right">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="100dp"
+                            android:layout_height="42dp"
+                            android:text="Scoreboard"
+                            android:id="@+id/fragment_game_scoreboard_button"
+                            android:singleLine="true"
+                            android:background="@drawable/wood_button"
+                            android:textColor="#000000"/>
+
+                        <Button
+                            android:layout_width="100dp"
+                            android:layout_height="42dp"
+                            android:text="Manual"
+                            android:id="@+id/fragment_game_manual_button"
+                            android:elegantTextHeight="false"
+                            android:singleLine="true"
+                            android:background="@drawable/wood_button"
+                            android:textColor="#000000"/>
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/fragment_game_log_container" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/train_scroll_container"
+                android:layout_weight=".8"
+                android:scrollIndicators="none">
+
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/fragment_game_round_number"
+                        android:gravity="center"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/fragment_game_turn_number"
+                        android:gravity="center"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/fragment_game_phase"
+                        android:gravity="center"
+                        android:textColor="#000000" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/fragment_game_round_card"></FrameLayout>
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:id="@+id/user_deck_container"
+                    android:layout_gravity="center"
+                    android:padding="5dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/fragment_game_player_draw_container"
+                        android:layout_weight="1"></FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/fragment_game_bullet_card_container"
+                        android:layout_weight="1"></FrameLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/user_list"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    tools:context=".activities.LobbyActivity">
+
+
+    <!--        Me              -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <Button
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:id="@+id/button0"
+            android:visibility="visible"
+            android:background="@android:color/transparent"
+            android:clickable="true" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/spinner0"
+            android:visibility="visible" />
+    </LinearLayout>
+    <!--                        -->
+
+    <!--    OtherUser 1         -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <Button
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:id="@+id/button1"
+            android:background="@android:color/transparent"
+            android:visibility="invisible"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/spinner1"
+            android:visibility="invisible" />
+    </LinearLayout>
+    <!--                        -->
+
+    <!--    OtherUser 2         -->
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <Button
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:id="@+id/button2"
+            android:background="@android:color/transparent"
+            android:visibility="invisible"/>
+
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/spinner2"
+            android:visibility="invisible" />
+    </LinearLayout>
+    <!--                        -->
+
+    <!--    OtherUser 3         -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <Button
+            android:visibility="invisible"
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:id="@+id/button3"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/spinner3"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:id="@+id/leaveLobby"
+            android:hapticFeedbackEnabled="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Refresh"
+            android:id="@+id/refreshLobby"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/startGame"
+            android:layout_gravity="right"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/leaveLobby"
+            android:layout_toEndOf="@+id/leaveLobby"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <!--                        -->
+</LinearLayout>

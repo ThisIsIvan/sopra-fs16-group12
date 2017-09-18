@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="550dp"
+    android:layout_height="312dp">
+
+    <ImageView
+        android:layout_width="550dp"
+        android:layout_height="312dp"
+        android:id="@+id/imageView8"
+        android:src="@drawable/dialog_background1"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="false" />
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="492dp"
+            android:layout_height="255dp"
+            android:layout_gravity="center">
+
+        <FrameLayout
+            android:layout_width="123dp"
+            android:layout_height="255dp">
+
+            <ImageView
+                android:layout_width="123dp"
+                android:layout_height="255dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/card_back" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textSize="100sp"
+                android:id="@+id/dialog_player_inventory_n_cards" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/dialog_player_inventory_character_container"
+            android:layout_width="123dp"
+            android:layout_height="255dp"/>
+
+        <FrameLayout
+            android:id="@+id/dialog_player_inventory_n_bullets_container"
+            android:layout_width="123dp"
+            android:layout_height="255dp"
+                />
+
+        <TableLayout
+            android:layout_width="123dp"
+            android:layout_height="255dp"
+            android:paddingTop="10dp">
+
+            <TableRow
+                android:id="@+id/tableRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="false"
+                    android:src="@drawable/item_bag" />
+
+                <TextView
+                    android:id="@+id/dialog_player_inventory_n_bags"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="#000000" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/imageView11"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/item_gem" />
+
+                <TextView
+                    android:id="@+id/dialog_player_inventory_n_gems"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="#000000" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/imageView12"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/item_case" />
+
+                <TextView
+                    android:id="@+id/dialog_player_inventory_n_cases"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="#000000" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/dialog_player_inventory_networth"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="$ 0"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#000000" />
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:id="@+id/dialog_scoreboard_element_crown"
+            android:src="@drawable/crown"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:visibility="invisible"
+            android:layout_marginRight="10dp"/>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dialog_scoreboard_element_circle_container"
+        android:layout_gravity="center"
+        android:padding="1dp">
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dialog_scoreboard_element_username"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:singleLine="true"
+        android:layout_gravity="center"
+        android:width="150dp"
+        android:phoneNumber="false"
+        android:password="false"
+        android:autoText="false"
+        android:textColor="#000000" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="2dp">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/item_bag"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:id="@+id/dialog_scoreboard_element_bag"
+                    android:textSize="15dp"
+                    android:layout_gravity="center"
+                    android:textColor="#000000"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="2dp">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/item_gem"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:id="@+id/dialog_scoreboard_element_gem"
+                    android:textSize="15dp"
+                    android:layout_gravity="center"
+                    android:textColor="#000000"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="2dp">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/item_case"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center" />
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:id="@+id/dialog_scoreboard_element_case"
+                    android:textSize="15dp"
+                    android:layout_gravity="center"
+                    android:textColor="#000000"/>
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dialog_scoreboard_element_networth"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:singleLine="true"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:id="@+id/dialog_scoreboard_element_gunslinger"
+        android:src="@drawable/gunslinger_badge"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:visibility="invisible" />
+
+</LinearLayout>

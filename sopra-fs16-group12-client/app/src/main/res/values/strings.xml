@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">group-12-android</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_title">Colt Express</string>
+
+    <string name="communication_error">Communication Error</string>
+
+</resources>
