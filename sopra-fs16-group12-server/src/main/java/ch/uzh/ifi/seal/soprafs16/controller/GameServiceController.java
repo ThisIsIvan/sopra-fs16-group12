@@ -324,5 +324,7 @@ public class GameServiceController extends GenericService {
         Game game = gameRepo.findOne(gameId);
         Long id = game.getActions().get(game.getActions().size() - 1).getId();
         return actionRepo.findOne(id);
-    }//games/{gameId}/actions - POST
+    }
+
+    //games/{gameId}/actions - POST
 }
